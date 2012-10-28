@@ -17,9 +17,24 @@
         <style type="text/css">
             /*Index Page*/
             /*Will Become a Maintenance Page in the next upgrade*/
+            body
+            {
+                background-color: #000;
+                color: #fff;
+                text-align: center;
+            }
             #wrapper, #container
             {
-                width:940px;
+                width: 940px;
+                margin: 170px auto;
+            }
+            section
+            {
+                float: left; 
+            }
+            #section-mid
+            {
+                width: 500px;
             }
             #section-left, #section-right
             {
@@ -35,18 +50,18 @@
 
         <!-- Add your site or application content here -->
         <div id="wrapper">
-            <div id="container">
-                <header> Test </header>
+            <div id="container" class="clearfix">
+                <header> Test header</header>
                 <section id="section-left">
-                    <p>TEST</p>
+                    <p>TEST section-left</p>
                 </section>
                 <section id="section-mid">
-                    <p> TEST </p>
+                    <p> TEST section-mid</p>
                 </section>
                 <section id="section-right">
-                    <p> TEST </p>
+                    <p> TEST section-right</p>
                 </section>
-                <footer> TEST</footer>
+                <footer> TEST footer</footer>
             </div>
             <footer id="legal-social"></footer>
         </div>
