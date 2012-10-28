@@ -39,6 +39,10 @@
                 text-align: center;
                 font: 28px/37px 'BebasNeueRegular', Arial, sans-serif;
             }
+            header
+            {
+                font-size: 40px;
+            }
             #wrapper, #container
             {
                 width: 940px;
@@ -51,7 +55,17 @@
             #section-mid
             {
                 width: 500px;
-                font-size: 60px;
+                padding: 20px 0;
+                font-size: 80px;
+                letter-spacing: 1px;
+            }
+            #section-mid span
+            {
+                display: block;
+            }
+            #section-mid span.firstname
+            {
+                margin-bottom: 30px;
             }
             #section-left, #section-right
             {
@@ -68,16 +82,27 @@
         <!-- Add your site or application content here -->
         <div id="wrapper">
             <div id="container" class="clearfix">
-                <header> Test header</header>
+                <header>COMING SOON</header>
                 <section id="section-left">
-                    <span>TEST section-left</span>
+                    <dl>
+                        <dd>Website</dd>
+                        <dd>Blog</dd>
+                        <dd>Portfolio</dd>
+                        <dd>CV</dd>
+                    </dl>
                 </section>
                 <section id="section-mid">
-                    <span> TEST section-mid</span>
+                    <span class="firstname"> ANTOINE</span>
+                    <span> KOUGBLENOU</span>
                 </section>
                 <section id="section-right">
                     <span> TEST section-right</span>
+                    <dl>
+                        <dd>Contact:</dd>
+                        <dd>antoine.kougblenou@gmail.com</dd>
+                    </dl>
                 </section>
+                <div class="clearfix"></div>
                 <footer> TEST footer</footer>
             </div>
             <footer id="legal-social"></footer>
