@@ -17,11 +17,27 @@
         <style type="text/css">
             /*Index Page*/
             /*Will Become a Maintenance Page in the next upgrade*/
+            @font-face {
+                font-family: 'BebasNeueRegular';
+                src: url('assets/fonts/BebasNeue-webfont.eot');
+                src: url('assets/fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+                     url('assets/fonts/BebasNeue-webfont.woff') format('woff'),
+                     url('assets/fonts/BebasNeue-webfont.ttf') format('truetype'),
+                     url('assets/fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            h1.fontface {font: 60px/68px 'BebasNeueRegular', Arial, sans-serif;letter-spacing: 0;}
+
+            p.style1 {font: 18px/27px 'BebasNeueRegular', Arial, sans-serif;}
+
             body
             {
                 background-color: #000;
                 color: #fff;
                 text-align: center;
+                font: 28px/37px 'BebasNeueRegular', Arial, sans-serif;
             }
             #wrapper, #container
             {
@@ -35,6 +51,7 @@
             #section-mid
             {
                 width: 500px;
+                font-size: 60px;
             }
             #section-left, #section-right
             {
@@ -45,7 +62,7 @@
     </head>
     <body>
         <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</span>
         <![endif]-->
 
         <!-- Add your site or application content here -->
@@ -53,13 +70,13 @@
             <div id="container" class="clearfix">
                 <header> Test header</header>
                 <section id="section-left">
-                    <p>TEST section-left</p>
+                    <span>TEST section-left</span>
                 </section>
                 <section id="section-mid">
-                    <p> TEST section-mid</p>
+                    <span> TEST section-mid</span>
                 </section>
                 <section id="section-right">
-                    <p> TEST section-right</p>
+                    <span> TEST section-right</span>
                 </section>
                 <footer> TEST footer</footer>
             </div>
